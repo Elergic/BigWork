@@ -105,7 +105,7 @@ public class FifthFragment extends Fragment implements Runnable{
             ItemManager manager = new ItemManager(getActivity());
             manager.addAll(itemList);
 
-            String url_new = lis.get(0).attr("href");
+            String url_new = lis.get(2).attr("href");
 
             Document doc_new = Jsoup.connect(url_new).get();
             Elements ps = doc_new.getElementsByClass("article");
